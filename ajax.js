@@ -8,7 +8,7 @@ function ajaxGet(){
 			if (http.status == 200) {
 				
 				console.log("所以是有返回的");
-				var ajaxRes = document.getElementById("ajaxRes");
+				var ajaxRes = document.getElementById("ajaxResponse");
 				ajaxRes.innerHTML = http.responseText;
 			}
 		}
