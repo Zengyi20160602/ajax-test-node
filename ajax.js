@@ -4,7 +4,7 @@ function ajaxGet(){
 	
 	http.onreadystatechange = function() {
 		if(http.readState == 4) {
-			if (http.status = 200) {
+			if (http.status == 200) {
 				
 				console.log("所以是有返回的");
 				var ajaxRes = document.getElementById("ajaxRes");
