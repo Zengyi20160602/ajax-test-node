@@ -3,7 +3,7 @@ function ajaxGet(){
 	var http = new XMLHttpRequest();
 	
 	http.onreadystatechange = function() {
-		if(http.readState == 4) {
+		if(http.readyState == 4) {
 			console.log("发送没有问题");
 			if (http.status == 200) {
 				
