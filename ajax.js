@@ -4,6 +4,7 @@ function ajaxGet(){
 	
 	http.onreadystatechange = function() {
 		if(http.readState == 4) {
+			console.log("发送没有问题");
 			if (http.status == 200) {
 				
 				console.log("所以是有返回的");
