@@ -2,13 +2,15 @@ function ajaxGet(){
 	var url = "http://localhost:5000/";
 	var http = new XMLHttpRequest();
 	
-	http.onload = function() {
-		if (http.status = 200) {
-			alert("data received!");
-			var ajaxRes = document.getElementById("ajaxRes");
-			ajaxRes.innerHTML = http.responseText;
+	http.onreadystatechange = function() {
+		if(http.readState == 4) {
+			if (http.status = 200) {
+				
+				var ajaxRes = document.getElementById("ajaxRes");
+				ajaxRes.innerHTML = http.responseText;
+			}
 		}
-	};
+	}
 	http.open("get",url);
 	http.send(null);
 }
