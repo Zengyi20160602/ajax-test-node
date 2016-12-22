@@ -13,7 +13,7 @@ function ajaxGet(){
 			}
 		}
 	}
-	http.open("get",url);
+	http.open("get",url,true);
 	http.send(null);
 }
 function ajaxClick() {
