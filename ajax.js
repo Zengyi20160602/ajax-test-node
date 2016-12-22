@@ -1,5 +1,5 @@
 function ajaxGet(){
-	var url = "http://localhost:5000";
+	var url = "http://localhost:5000/";
 	var http = new XMLHttpRequest();
 	
 	http.onload = function() {
